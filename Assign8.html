@@ -14,6 +14,25 @@
     <br>
     <button onclick="action()">Click To Submit</button>
 
-    <script src="Assign 8.js"></script>
+    <script language="javascript">
+
+            function action(){
+            if(document.querySelector("#sel1").checked)
+            {
+                document.write("You Are Not Eligible To Drive Car");
+            }
+            
+            else if(document.querySelector("#sel2").checked)
+            {
+                document.write("You Are Not Eligible To Drive Vehicle");
+            }
+
+            else
+            {
+                document.write("Please Check Eligibility Box ");
+            }
+        }
+
+    </script>
 </body>
 </html>
