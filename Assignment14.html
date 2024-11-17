@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assign 14.css">
+</head>
+<body>
+    
+    <h5>
+
+        <table cellspan="0" cellpadding="7" border="0">
+            <tr>
+                <td> Student Name : 
+                <td> <input type="text" id="nme">
+            </tr>
+
+            <tr>
+                <td>  Oracle :  
+                <td> <input type="number" id="t2">
+            </tr>
+
+            <tr>
+                <td> C++ : 
+                <td> <input type="number" id="t3"> 
+            </tr>
+
+            <tr>
+                <td> E-Commerce : 
+                <td> <input type="number" id="t4">
+            </tr>
+
+            <tr>
+                <td> SAD : 
+                <td> <input type="number" id="t5">
+            </tr>
+            
+
+            <tr>
+                <td> STATISTIC : 
+                <td> <input type="number" id="t6">
+            </tr>
+
+            <tr>
+                <td> TOTAL 
+                <td> <input type="number" id="t7" readonly>
+            </tr>
+
+            <tr>
+                <td> PERCENTAGE 
+                <td> <input type="text" id="t8" readonly>
+            </tr>
+
+            <tr>
+                <td> CLASS
+                <td> <input type="text" id="t9" readonly>
+            </tr>
+
+
+           <td>
+            <button onclick="calculate()">SUBMIT</button>
+            </td>
+      
+        </table>
+
+    </h5>
+    <script language="javascript">
+        function calculate(){
+
+var x = parseInt(t2.value)+parseInt(t3.value)+parseInt(t4.value)+parseInt(t5.value)+parseInt(t6.value);
+
+t7.value = x;
+
+var y = x/6;
+t8.value = y;
+
+var n = parseInt(t8.value);
+
+if(n>=35 && n<=50)
+{
+    t9.value="Pass";
+}
+
+else if(n>=51 && n<=75)
+    {
+        t9.value="Second Class";
+    }
+
+else if(n>=75)
+{
+    t9.value = "First Class";
+}
+        }
+    </script>
+</body>
+</html>
